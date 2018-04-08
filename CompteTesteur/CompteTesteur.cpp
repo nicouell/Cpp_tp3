@@ -5,6 +5,10 @@
  *      Author: etudiant
  */
 
+#include <gtest/gtest.h>
+#include "Compte.h"
+#include <iostream>
 
+using namespace std;
 
 

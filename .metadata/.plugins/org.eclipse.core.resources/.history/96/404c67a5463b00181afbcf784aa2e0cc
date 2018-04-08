@@ -1,0 +1,25 @@
+/*
+ * Compte.h
+ *
+ *  Created on: 2018-04-07
+ *      Author: etudiant
+ */
+
+#ifndef COMPTE_H_
+#define COMPTE_H_
+#include "ContratException.h"
+
+class Compte {
+public:
+	Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::string& p_description);
+	virtual ~Compte();
+
+private:
+	int m_noCompte; //doit être positif
+	double m_tauxInteret;
+	double m_solde;
+	std::string m_description; //doit être non vide
+	util::Date m_dateOuverture; //date à la création du compte
+};
+
+#endif /* COMPTE_H_ */
