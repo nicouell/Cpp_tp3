@@ -40,7 +40,7 @@ util::Date Compte::reqDateOuverture() const {
 }
 
 std::string Compte::reqCompteFormate() const {
-	std::ostringstream os;
+	ostringstream os;
 	return os.str();
 }
 

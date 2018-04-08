@@ -1,0 +1,19 @@
+/*
+ * Compte.cpp
+ *
+ *  Created on: 2018-04-07
+ *      Author: etudiant
+ */
+
+#include "Compte.h"
+
+Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::string& p_description):
+			  m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description)
+{
+
+}
+
+Compte::~Compte() {
+	// TODO Auto-generated destructor stub
+}
+
