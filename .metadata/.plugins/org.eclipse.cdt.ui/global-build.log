@@ -1,7 +1,4 @@
-12:04:26 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-make: rien à faire pour « all ».
-12:05:31 **** Incremental Build of configuration Debug for project TP3 ****
+21:54:41 **** Incremental Build of configuration Debug for project TP3 ****
 make all 
 Building file: ../Main.cpp
 Invoking: GCC C++ Compiler

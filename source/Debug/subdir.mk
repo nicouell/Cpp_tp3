@@ -4,16 +4,25 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../Client.cpp \
+../Compte.cpp \
 ../ContratException.cpp \
-../Date.cpp 
+../Date.cpp \
+../validationFormat.cpp 
 
 OBJS += \
+./Client.o \
+./Compte.o \
 ./ContratException.o \
-./Date.o 
+./Date.o \
+./validationFormat.o 
 
 CPP_DEPS += \
+./Client.d \
+./Compte.d \
 ./ContratException.d \
-./Date.d 
+./Date.d \
+./validationFormat.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
