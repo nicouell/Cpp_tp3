@@ -1,27 +1,12 @@
-15:48:08 **** Build of configuration Debug for project TP3 ****
+16:27:53 **** Build of configuration Debug for project CompteTesteur ****
 make all 
-Building file: ../Main.cpp
+Building file: ../CompteTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
-Finished building: ../Main.cpp
+g++ -std=c++1y -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteTesteur.d" -MT"CompteTesteur.o" -o "CompteTesteur.o" "../CompteTesteur.cpp"
+Finished building: ../CompteTesteur.cpp
  
-Building target: TP3
+Building target: CompteTesteur
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
-Finished building target: TP3
- 
-15:48:43 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-make: rien à faire pour « all ».
-15:49:41 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-Building file: ../Main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
-Finished building: ../Main.cpp
- 
-Building target: TP3
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
-Finished building target: TP3
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteTesteur"  ./CompteTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: CompteTesteur
  

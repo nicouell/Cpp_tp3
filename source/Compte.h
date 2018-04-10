@@ -30,21 +30,21 @@ class Compte {
 
 public:
 	Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::string& p_description);
-//	virtual ~Compte();
+	virtual ~Compte();
 
 	int reqNoCompte() const;
 	double reqTauxInteret() const;
 	double reqSolde() const;
 	std::string reqDescription() const;
 	util::Date reqDateOuverture() const;
-	std::string reqCompteFormate() const;
+	virtual std::string& reqCompteFormate() const;
 
 	void asgTauxInteret(double p_tauxInteret);
 	void asgSolde(double p_solde);
 	void asgDescription(std::string& p_description);
 
-//	virtual double calculerInteret() = 0;
-//	virtual Compte* clone() const = 0;
+	virtual double calculerInteret() const = 0;
+	virtual Compte* clone() const = 0;
 
 
 private:

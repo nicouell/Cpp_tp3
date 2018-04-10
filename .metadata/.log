@@ -181,3 +181,24 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-04-10 15:47:56.435
 !MESSAGE Indexed 'TP3' (1 sources, 138 headers) in 1,9 sec: 10 341 declarations; 18 018 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 15:52:14.663
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.gna.eclox.core 4 0 2018-04-10 16:07:22.987
+!MESSAGE : invalid custom doxygen identifier found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 16:27:54.578
+!MESSAGE Indexed 'CompteTesteur' (1 sources, 234 headers) in 5,59 sec: 40 049 declarations; 56 170 references; 0 unresolved inclusions; 4 syntax errors; 19 unresolved names (0,02 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 16:37:42.192
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 16:37:49.945
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 16:37:52.317
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 16:37:53.864
+!MESSAGE No .vrapperrc or _vrapperrc found.

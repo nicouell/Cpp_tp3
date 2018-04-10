@@ -11,7 +11,8 @@
 
 using namespace std;
 
-Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::string& p_description):m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description), m_dateOuverture(util::Date())
+Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const string& p_description):
+				m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description), m_dateOuverture(util::Date())
 {
 	PRECONDITION(p_noCompte >= 0);
 	PRECONDITION(!p_description.empty());
@@ -27,7 +28,7 @@ Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::
 
 }
 
-//Compte::~Compte() {}
+Compte::~Compte() {}
 
 /**
  * \brief retourne le numéro du compte
@@ -73,7 +74,7 @@ util::Date Compte::reqDateOuverture() const {
  * \brief retourne un compte formatée dans une chaîne de caracères (string)
  * \return le compte formatée dans une chaîne de caractères
  */
-string Compte::reqCompteFormate() const {
+string& Compte::reqCompteFormate() const {
 	ostringstream os;
 	os<<"numero: " << m_noCompte << endl;
 	os<<"Description: " << m_description << endl;

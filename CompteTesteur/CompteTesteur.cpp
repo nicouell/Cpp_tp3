@@ -11,4 +11,20 @@
 
 using namespace std;
 
+/**
+ * \class CompteTest
+ * \brief classe de test permettant de tester la classe abstraite Compte
+ */
+class CompteTest: public Compte{
 
+public:
+	CompteTest(int noCompte, double tauxInteret, double solde, const string& description):
+		Compte(noCompte, tauxInteret, solde, description){
+	};
+	virtual string& reqCompteFormate() const{
+		return Compte::reqCompteFormate();
+	};
+	virtual double calculerInteret(){
+		return 0
+	}
+};
