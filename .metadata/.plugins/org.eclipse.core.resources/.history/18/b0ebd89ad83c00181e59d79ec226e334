@@ -17,13 +17,13 @@ Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const strin
 	PRECONDITION(p_noCompte >= 0);
 	PRECONDITION(!m_description.empty());
 
-	POSTCONDITION(m_noCompte == p_noCompte);
+/*	POSTCONDITION(m_noCompte == p_noCompte);
 	POSTCONDITION(m_tauxInteret == p_tauxInteret);
 	POSTCONDITION(m_solde == p_solde);
 	POSTCONDITION(m_tauxInteret == p_tauxInteret);
 	POSTCONDITION(m_tauxInteret == p_tauxInteret);
-	POSTCONDITION(m_dateOuverture == util::Date());
-
+	POSTCONDITION(m_dateOuverture == util::Date);
+*/
 	INVARIANTS();
 }
 

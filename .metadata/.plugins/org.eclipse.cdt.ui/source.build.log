@@ -1,9 +1,37 @@
-21:54:31 **** Incremental Build of configuration Debug for project source ****
+12:03:48 **** Build of configuration Debug for project source ****
 make all 
 Building file: ../Client.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Client.d" -MT"Client.o" -o "Client.o" "../Client.cpp"
 Finished building: ../Client.cpp
+ 
+Building file: ../Compte.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Compte.d" -MT"Compte.o" -o "Compte.o" "../Compte.cpp"
+../Compte.cpp: In member function ‘virtual double Compte::calculerInteret()’:
+../Compte.cpp:113:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Compte.cpp: In member function ‘virtual Compte* Compte::clone() const’:
+../Compte.cpp:116:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Compte.cpp
+ 
+Building file: ../ContratException.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
+Finished building: ../ContratException.cpp
+ 
+Building file: ../Date.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
+Finished building: ../Date.cpp
+ 
+Building file: ../validationFormat.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
+Finished building: ../validationFormat.cpp
  
 Building target: libsource.a
 Invoking: GCC Archiver
@@ -12,5 +40,5 @@ ar: création de libsource.a
 Finished building target: libsource.a
  
 
-21:54:31 Build Finished (took 223ms)
+12:03:48 Build Finished (took 874ms)
 

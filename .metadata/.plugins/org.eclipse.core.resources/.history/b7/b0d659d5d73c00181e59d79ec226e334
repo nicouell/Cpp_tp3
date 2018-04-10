@@ -9,7 +9,6 @@
 #ifndef COMPTE_H_
 #define COMPTE_H_
 #include "ContratException.h"
-#include "Date.h"
 
 class Compte {
 

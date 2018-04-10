@@ -14,17 +14,7 @@ using namespace std;
 Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const string& p_description):
 			  m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description)
 {
-	PRECONDITION(p_noCompte >= 0);
-	PRECONDITION(!m_description.empty());
 
-	POSTCONDITION(m_noCompte == p_noCompte);
-	POSTCONDITION(m_tauxInteret == p_tauxInteret);
-	POSTCONDITION(m_solde == p_solde);
-	POSTCONDITION(m_tauxInteret == p_tauxInteret);
-	POSTCONDITION(m_tauxInteret == p_tauxInteret);
-	POSTCONDITION(m_dateOuverture == util::Date());
-
-	INVARIANTS();
 }
 
 Compte::~Compte() {
@@ -113,10 +103,4 @@ double Compte::calculerInteret() {
 }
 
 Compte* Compte::clone() const {
-}
-
-void Compte::verifieInvariant() const{
-	INVARIANT(m_noCompte >= 0);
-	INVARIANT(!m_description.empty());
-	INVARIANT(m_dateOuverture == util::Date());
 }
