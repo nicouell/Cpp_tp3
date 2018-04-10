@@ -1,4 +1,4 @@
-12:03:48 **** Build of configuration Debug for project source ****
+15:43:59 **** Build of configuration Debug for project source ****
 make all 
 Building file: ../Client.cpp
 Invoking: GCC C++ Compiler
@@ -8,14 +8,6 @@ Finished building: ../Client.cpp
 Building file: ../Compte.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Compte.d" -MT"Compte.o" -o "Compte.o" "../Compte.cpp"
-../Compte.cpp: In member function ‘virtual double Compte::calculerInteret()’:
-../Compte.cpp:113:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../Compte.cpp: In member function ‘virtual Compte* Compte::clone() const’:
-../Compte.cpp:116:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
 Finished building: ../Compte.cpp
  
 Building file: ../ContratException.cpp
@@ -40,5 +32,5 @@ ar: création de libsource.a
 Finished building target: libsource.a
  
 
-12:03:48 Build Finished (took 874ms)
+15:44:00 Build Finished (took 896ms)
 

@@ -1,0 +1,25 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: 2018-04-04
+ *      Author: etudiant
+ */
+
+#include <iostream>
+#include "Client.h"
+#include "Compte.h"
+
+using namespace std;
+using namespace util;
+using namespace banque;
+
+int main(){
+	Date date1();
+	Client client1();
+	cout << client1.reqClientFormate();
+	Compte compte1();
+	cout << compte1.reqCompteFormate();
+	return 0;
+}
+
+

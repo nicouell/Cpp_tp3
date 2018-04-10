@@ -1,0 +1,131 @@
+/*
+ * Compte.cpp
+ *
+ *  Created on: 2018-04-07
+ *      Author: etudiant
+ */
+
+#include "Compte.h"
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const string& p_description):
+			  m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description), m_dateOuverture(util::Date())
+{
+/*	PRECONDITION(p_noCompte >= 0);
+	PRECONDITION(!p_description.empty());
+
+	POSTCONDITION(m_noCompte == p_noCompte);
+	POSTCONDITION(m_tauxInteret == p_tauxInteret);
+	POSTCONDITION(m_solde == p_solde);
+	POSTCONDITION(m_tauxInteret == p_tauxInteret);
+	POSTCONDITION(m_tauxInteret == p_tauxInteret);
+	POSTCONDITION(m_dateOuverture == util::Date());
+
+	INVARIANTS();
+*/
+}
+
+//Compte::~Compte() {}
+
+/**
+ * \brief retourne le numéro du compte
+ * \return un entier int qui représente le numéro du compte
+ */
+int Compte::reqNoCompte() const {
+	return m_noCompte;
+}
+
+/**
+ * \brief retourne le taux d'intéret
+ * \return un rationnel double qui représente le taux d'intéret
+ */
+double Compte::reqTauxInteret() const {
+	return m_tauxInteret;
+}
+
+/**
+ * \brief retourne le solde du compte
+ * \return un rationnel double qui représente le solde du compte
+ */
+double Compte::reqSolde() const {
+	return m_solde;
+}
+
+/**
+ * \brief retroune le type de compte
+ * \return un string qui représente le type de compte
+ */
+string Compte::reqDescription() const {
+	return m_description;
+}
+
+/**
+ * \brief retourne la date d'ouverture du compte
+ * \return un objet date qui représete la date d'ouverture du compte
+ */
+util::Date Compte::reqDateOuverture() const {
+	return m_dateOuverture;
+}
+
+/**
+ * \brief retourne un compte formatée dans une chaîne de caracères (string)
+ * \return le compte formatée dans une chaîne de caractères
+ */
+string Compte::reqCompteFormate() const {
+	ostringstream os;
+	os<<"numero: " << m_noCompte << endl;
+	os<<"Description: " << m_description << endl;
+	os<<"Date d'ouverture: " << m_dateOuverture.reqDateFormatee() << endl;
+	os<<"Taux d'interet: " << m_tauxInteret << endl;
+	os<<"Solde: " << m_solde << "$";
+	return os.str();
+}
+
+/**
+ * \brief Assigne un taux d'intéret à l'objet courant
+ * \param[in] p_tauxInteret est un rationel double qui représente le taux d'intéret du compte
+ * \pre p_tauxInteret doit correspondre à une date valide
+ * \post l'objet a été assigné à partir des entiers passés en paramètres
+ */
+void Compte::asgTauxInteret(double p_tauxInteret) {
+	m_tauxInteret = p_tauxInteret;
+
+	POSTCONDITION(m_tauxInteret == p_tauxInteret);
+
+	INVARIANTS();
+}
+
+/**
+ * \brief Assigne un solde à l'objet courant
+ * \param[in] p_solde est un rationel double qui représente le solde du compte
+ * \pre p_solde doit correspondre à une date valide
+ * \post l'objet a été assigné à partir des entiers passés en paramètres
+ */
+void Compte::asgSolde(double p_solde) {
+	m_solde = p_solde;
+
+	POSTCONDITION(m_solde == p_solde);
+
+	INVARIANTS();
+}
+
+void Compte::asgDescription(string& p_description) {
+
+	PRECONDITION(!p_description.empty());
+
+	m_description = p_description;
+
+	POSTCONDITION(m_description == p_description);
+
+	INVARIANTS();
+
+}
+
+void Compte::verifieInvariant() const{
+	INVARIANT(m_noCompte >= 0);
+	INVARIANT(!m_description.empty());
+	INVARIANT(m_dateOuverture == util::Date());
+}

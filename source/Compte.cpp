@@ -11,11 +11,10 @@
 
 using namespace std;
 
-Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const string& p_description):
-			  m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description)
+Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::string& p_description):m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description), m_dateOuverture(util::Date())
 {
 	PRECONDITION(p_noCompte >= 0);
-	PRECONDITION(!m_description.empty());
+	PRECONDITION(!p_description.empty());
 
 	POSTCONDITION(m_noCompte == p_noCompte);
 	POSTCONDITION(m_tauxInteret == p_tauxInteret);
@@ -25,11 +24,10 @@ Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const strin
 	POSTCONDITION(m_dateOuverture == util::Date());
 
 	INVARIANTS();
+
 }
 
-Compte::~Compte() {
-	// TODO Auto-generated destructor stub
-}
+//Compte::~Compte() {}
 
 /**
  * \brief retourne le numéro du compte
@@ -93,6 +91,10 @@ string Compte::reqCompteFormate() const {
  */
 void Compte::asgTauxInteret(double p_tauxInteret) {
 	m_tauxInteret = p_tauxInteret;
+
+	POSTCONDITION(m_tauxInteret == p_tauxInteret);
+
+	INVARIANTS();
 }
 
 /**
@@ -103,16 +105,22 @@ void Compte::asgTauxInteret(double p_tauxInteret) {
  */
 void Compte::asgSolde(double p_solde) {
 	m_solde = p_solde;
+
+	POSTCONDITION(m_solde == p_solde);
+
+	INVARIANTS();
 }
 
 void Compte::asgDescription(string& p_description) {
+
+	PRECONDITION(!p_description.empty());
+
 	m_description = p_description;
-}
 
-double Compte::calculerInteret() {
-}
+	POSTCONDITION(m_description == p_description);
 
-Compte* Compte::clone() const {
+	INVARIANTS();
+
 }
 
 void Compte::verifieInvariant() const{

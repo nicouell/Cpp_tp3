@@ -6,19 +6,17 @@
  */
 
 #include <iostream>
-#include "Date.h"
 #include "Client.h"
 #include "Compte.h"
-#include "ContratException.h"
-#include "validationFormat.h"
 
 using namespace std;
-using namespace util;
-using namespace banque;
 
 int main(){
-	Date date1();
-	Client client1();
+	util::Date date1();
+	banque::Client client1(1500, "Nicola", "Ouellet", "418 581-4094");
+	cout << client1.reqClientFormate();
+	Compte compte(1234, 0.3, 1000, "cheque");
+	cout << compte.reqCompteFormate();
 	return 0;
 }
 
