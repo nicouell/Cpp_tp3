@@ -9,7 +9,9 @@
 #include <iostream>
 #include <sstream>
 
-Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const std::string& p_description):
+using namespace std;
+
+Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const string& p_description):
 			  m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description)
 {
 
@@ -19,38 +21,82 @@ Compte::~Compte() {
 	// TODO Auto-generated destructor stub
 }
 
+/**
+ * \brief retourne le numéro du compte
+ * \return un entier int qui représente le numéro du compte
+ */
 int Compte::reqNoCompte() const {
 	return m_noCompte;
 }
 
+/**
+ * \brief retourne le taux d'intéret
+ * \return un rationnel double qui représente le taux d'intéret
+ */
 double Compte::reqTauxInteret() const {
 	return m_tauxInteret;
 }
 
+/**
+ * \brief retourne le solde du compte
+ * \return un rationnel double qui représente le solde du compte
+ */
 double Compte::reqSolde() const {
 	return m_solde;
 }
 
-std::string Compte::reqDescription() const {
+/**
+ * \brief retroune le type de compte
+ * \return un string qui représente le type de compte
+ */
+string Compte::reqDescription() const {
 	return m_description;
 }
 
+/**
+ * \brief retourne la date d'ouverture du compte
+ * \return un objet date qui représete la date d'ouverture du compte
+ */
 util::Date Compte::reqDateOuverture() const {
 	return m_dateOuverture;
 }
 
-std::string Compte::reqCompteFormate() const {
-	std::ostringstream os;
+/**
+ * \brief retourne un compte formatée dans une chaîne de caracères (string)
+ * \return le compte formatée dans une chaîne de caractères
+ */
+string Compte::reqCompteFormate() const {
+	ostringstream os;
+	os<<"numero: " << m_noCompte << endl;
+	os<<"Description: " << m_description << endl;
+	os<<"Date d'ouverture: " << m_dateOuverture.reqDateFormatee() << endl;
+	os<<"Taux d'interet: " << m_tauxInteret << endl;
+	os<<"Solde: " << m_solde << "$";
 	return os.str();
 }
 
+/**
+ * \brief Assigne un taux d'intéret à l'objet courant
+ * \param[in] p_tauxInteret est un rationel double qui représente le taux d'intéret du compte
+ * \pre p_tauxInteret doit correspondre à une date valide
+ * \post l'objet a été assigné à partir des entiers passés en paramètres
+ */
 void Compte::asgTauxInteret(double p_tauxInteret) {
+	m_tauxInteret = p_tauxInteret;
 }
 
+/**
+ * \brief Assigne un solde à l'objet courant
+ * \param[in] p_solde est un rationel double qui représente le solde du compte
+ * \pre p_solde doit correspondre à une date valide
+ * \post l'objet a été assigné à partir des entiers passés en paramètres
+ */
 void Compte::asgSolde(double p_solde) {
+	m_solde = p_solde;
 }
 
-void Compte::asgDescription(std::string& p_description) {
+void Compte::asgDescription(string& p_description) {
+	m_description = p_description;
 }
 
 double Compte::calculerInteret() {

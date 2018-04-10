@@ -51,7 +51,6 @@ private:
 	double m_solde;
 	std::string m_description; //doit être non vide
 	util::Date m_dateOuverture; //date à la création du compte
-	void verifieInvariant() const;
 };
 
 #endif /* COMPTE_H_ */
