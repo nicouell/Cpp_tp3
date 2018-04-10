@@ -202,3 +202,9 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 16:37:53.864
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 17:29:28.078
+!MESSAGE Indexed 'source' (5 sources, 139 headers) in 1,22 sec: 10 506 declarations; 18 865 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 17:35:31.653
+!MESSAGE Indexed 'CompteTesteur' (1 sources, 234 headers) in 4,15 sec: 40 077 declarations; 56 429 references; 0 unresolved inclusions; 4 syntax errors; 19 unresolved names (0,02 %)

@@ -74,7 +74,7 @@ util::Date Compte::reqDateOuverture() const {
  * \brief retourne un compte formatée dans une chaîne de caracères (string)
  * \return le compte formatée dans une chaîne de caractères
  */
-string& Compte::reqCompteFormate() const {
+string Compte::reqCompteFormate() const{
 	ostringstream os;
 	os<<"numero: " << m_noCompte << endl;
 	os<<"Description: " << m_description << endl;

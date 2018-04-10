@@ -1,4 +1,4 @@
-16:27:53 **** Build of configuration Debug for project CompteTesteur ****
+17:39:37 **** Build of configuration Debug for project CompteTesteur ****
 make all 
 Building file: ../CompteTesteur.cpp
 Invoking: GCC C++ Compiler
@@ -10,3 +10,6 @@ Invoking: GCC C++ Linker
 g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteTesteur"  ./CompteTesteur.o   -lgtest_main -lgtest -lpthread -lsource
 Finished building target: CompteTesteur
  
+17:39:44 **** Incremental Build of configuration Debug for project CompteTesteur ****
+make all 
+make: rien à faire pour « all ».

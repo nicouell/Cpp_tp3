@@ -37,7 +37,7 @@ public:
 	double reqSolde() const;
 	std::string reqDescription() const;
 	util::Date reqDateOuverture() const;
-	virtual std::string& reqCompteFormate() const;
+	virtual std::string reqCompteFormate() const;
 
 	void asgTauxInteret(double p_tauxInteret);
 	void asgSolde(double p_solde);
