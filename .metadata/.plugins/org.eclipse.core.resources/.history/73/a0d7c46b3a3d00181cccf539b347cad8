@@ -1,0 +1,25 @@
+/*
+ * CompteEpargneTesteur.cpp
+ *
+ *  Created on: 2018-04-10
+ *      Author: etudiant
+ */
+
+#include <gtest/gtest.h>
+#include "Epargne.h"
+
+using namespace std;
+using namespace banque;
+
+TEST(Epargne, constructeurAvecParametreValide){
+	Epargne t_epargne(1500, 1.5, 5000, "description");
+	ASSERT_EQ(1500, t_epargne.reqNoCompte());
+	ASSERT_EQ(1.5, t_epargne.reqTauxInteret());
+	ASSERT_EQ(5000, t_epargne.reqSolde());
+	ASSERT_EQ("description", t_epargne.reqDescription());
+}
+
+TEST(Epargne, ConstructeurAvecPrametreInvalide){
+	ASSERT_THROW(Epargne t_epargne(1500, 0.0, 5000, "description"), PreconditionException);
+	ASSERT_THROW(Epargne t_epargne(1500, 5.0, 5000, "description"), PreconditionException);
+}

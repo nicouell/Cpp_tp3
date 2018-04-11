@@ -13,6 +13,8 @@ namespace banque {
 
 Epargne::Epargne(int p_noCompte, double p_tauxInteret, double p_solde,
 		const std::string& p_description): Compte(p_noCompte, p_tauxInteret, p_solde, p_description) {
+
+	PRECONDITION(p_tauxInteret >= 0.1 && p_tauxInteret <= 3.5);
 }
 
 Epargne::~Epargne() {}

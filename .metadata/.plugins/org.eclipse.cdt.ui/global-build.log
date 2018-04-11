@@ -1,32 +1,39 @@
-22:31:40 **** Incremental Build of configuration Debug for project source ****
+23:15:53 **** Build of configuration Debug for project CompteEpargneTesteur ****
 make all 
-Building file: ../Epargne.cpp
+Building file: ../CompteEpargneTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Epargne.d" -MT"Epargne.o" -o "Epargne.o" "../Epargne.cpp"
-Finished building: ../Epargne.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteEpargneTesteur.d" -MT"CompteEpargneTesteur.o" -o "CompteEpargneTesteur.o" "../CompteEpargneTesteur.cpp"
+Finished building: ../CompteEpargneTesteur.cpp
  
-Building target: libsource.a
-Invoking: GCC Archiver
-ar -r  "libsource.a"  ./Client.o ./Compte.o ./ContratException.o ./Date.o ./Epargne.o ./validationFormat.o   
-ar: création de libsource.a
-Finished building target: libsource.a
- 
-22:31:47 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-Building target: TP3
+Building target: CompteEpargneTesteur
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
-Finished building target: TP3
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteEpargneTesteur"  ./CompteEpargneTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: CompteEpargneTesteur
  
-22:32:43 **** Incremental Build of configuration Debug for project TP3 ****
+23:16:19 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
 make all 
-Building file: ../Main.cpp
+make: rien à faire pour « all ».
+23:30:06 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
+make all 
+Building file: ../CompteEpargneTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
-Finished building: ../Main.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteEpargneTesteur.d" -MT"CompteEpargneTesteur.o" -o "CompteEpargneTesteur.o" "../CompteEpargneTesteur.cpp"
+Finished building: ../CompteEpargneTesteur.cpp
  
-Building target: TP3
+Building target: CompteEpargneTesteur
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
-Finished building target: TP3
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteEpargneTesteur"  ./CompteEpargneTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: CompteEpargneTesteur
+ 
+23:43:01 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
+make all 
+Building file: ../CompteEpargneTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteEpargneTesteur.d" -MT"CompteEpargneTesteur.o" -o "CompteEpargneTesteur.o" "../CompteEpargneTesteur.cpp"
+Finished building: ../CompteEpargneTesteur.cpp
+ 
+Building target: CompteEpargneTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteEpargneTesteur"  ./CompteEpargneTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: CompteEpargneTesteur
  
