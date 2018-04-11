@@ -1072,3 +1072,9 @@ java.util.ConcurrentModificationException
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 14:14:08.050
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 14:28:21.884
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 14:36:03.422
+!MESSAGE No .vrapperrc or _vrapperrc found.

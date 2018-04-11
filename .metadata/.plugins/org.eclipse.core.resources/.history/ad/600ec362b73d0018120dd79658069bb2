@@ -24,11 +24,6 @@ TEST(Epargne, ConstructeurAvecPrametreInvalide){
 	ASSERT_THROW(Epargne t_epargne(1500, 5.0, 5000, "description"), PreconditionException);
 }
 
-TEST(Epargne, constructeurPrametreParDefaut){
-	Epargne t_epargne(1500, 1.5, 5000);
-	ASSERT_EQ("Epargne", t_epargne.reqDescription());
-}
-
 class UnCompteEpargne: public ::testing::Test{
 public:
 	UnCompteEpargne():

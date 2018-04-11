@@ -25,7 +25,7 @@ TEST(Epargne, ConstructeurAvecPrametreInvalide){
 }
 
 TEST(Epargne, constructeurPrametreParDefaut){
-	Epargne t_epargne(1500, 1.5, 5000);
+	Epargne t_epargne(1500, 1.5, 5000, 25);
 	ASSERT_EQ("Epargne", t_epargne.reqDescription());
 }
 
