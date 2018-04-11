@@ -11,6 +11,7 @@
 #include <iostream>
 
 using namespace std;
+using namespace banque;
 
 /**
  * \class CompteTest
@@ -21,9 +22,6 @@ class CompteTest: public Compte{
 public:
 	CompteTest(int noCompte, double tauxInteret, double solde, const string& description):
 		Compte(noCompte, tauxInteret, solde, description){
-	};
-	virtual string reqCompteFormate() const{
-		return Compte::reqCompteFormate();
 	};
 	virtual double calculerInteret() const{
 		return 0;
@@ -61,20 +59,52 @@ TEST(Compte, constructeurAvecParametre){
 	ASSERT_EQ(util::Date(), compteTest.reqDateOuverture());
 }
 
+TEST(Compte, ConstructeurAvecNoCompteInvalide){
+	ASSERT_THROW(CompteTest compteTest(-2, 0.3, 1500, "description"), ContratException);
+}
 
+TEST(Compte, ConstructeurAvecDescriptionInvalide){
+	ASSERT_THROW(CompteTest compteTest(5000, 0.3, 1500, ""), ContratException);
+}
 
+TEST_F(UnCompte, reqNoCompte){
+	ASSERT_EQ(1234, t_compte.reqNoCompte());
+}
 
+TEST_F(UnCompte, reqTauxInteret){
+	ASSERT_EQ(0.3, t_compte.reqTauxInteret());
+}
 
+TEST_F(UnCompte, reqSolde){
+	ASSERT_EQ(2000, t_compte.reqSolde());
+}
 
+TEST_F(UnCompte, reqDercription){
+	ASSERT_EQ("description", t_compte.reqDescription());
+}
 
+TEST_F(UnCompte, reqCompteFormate){
+	ASSERT_EQ("numero: 1234\nDescription: description\nDate d'ouverture: "+ t_compte.reqDateOuverture().reqDateFormatee() +"\nTaux d'interet: 0.3\nSolde: 2000$" , t_compte.reqCompteFormate());
+}
 
+TEST_F(UnCompte, asgTauxInteret){
+	t_compte.asgTauxInteret(3.1);
+	ASSERT_EQ(3.1, t_compte.reqTauxInteret());
+}
 
+TEST_F(UnCompte, asgSolde){
+	t_compte.asgSolde(2000);
+	ASSERT_EQ(2000, t_compte.reqSolde());
+}
 
+TEST_F(UnCompte, asgDescriptionValide){
+	t_compte.asgDescription("cheque");
+	ASSERT_EQ("cheque", t_compte.reqDescription());
+}
 
-
-
-
-
+TEST_F(UnCompte, asgDescriptionInvalide){
+	ASSERT_THROW(t_compte.asgDescription(""), PreconditionException);
+}
 
 
 

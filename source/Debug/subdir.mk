@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../Compte.cpp \
 ../ContratException.cpp \
 ../Date.cpp \
+../Epargne.cpp \
 ../validationFormat.cpp 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./Compte.o \
 ./ContratException.o \
 ./Date.o \
+./Epargne.o \
 ./validationFormat.o 
 
 CPP_DEPS += \
@@ -22,6 +24,7 @@ CPP_DEPS += \
 ./Compte.d \
 ./ContratException.d \
 ./Date.d \
+./Epargne.d \
 ./validationFormat.d 
 
 

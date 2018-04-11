@@ -10,6 +10,7 @@
 #include <sstream>
 
 using namespace std;
+namespace banque{
 
 Compte::Compte(int p_noCompte, double p_tauxInteret, double p_solde, const string& p_description):
 				m_noCompte(p_noCompte), m_tauxInteret(p_tauxInteret), m_solde(p_solde), m_description(p_description), m_dateOuverture(util::Date())
@@ -112,11 +113,11 @@ void Compte::asgSolde(double p_solde) {
 	INVARIANTS();
 }
 
-void Compte::asgDescription(string& p_description) {
-
-	PRECONDITION(!p_description.empty());
+void Compte::asgDescription(const string& p_description) {
 
 	m_description = p_description;
+
+	PRECONDITION(!p_description.empty());
 
 	POSTCONDITION(m_description == p_description);
 
@@ -129,3 +130,5 @@ void Compte::verifieInvariant() const{
 	INVARIANT(!m_description.empty());
 	INVARIANT(m_dateOuverture == util::Date());
 }
+
+} //namespace banque

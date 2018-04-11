@@ -12,6 +12,8 @@
 #include "ContratException.h"
 #include "Date.h"
 
+namespace banque{
+
 class Compte {
 
 /**
@@ -41,7 +43,7 @@ public:
 
 	void asgTauxInteret(double p_tauxInteret);
 	void asgSolde(double p_solde);
-	void asgDescription(std::string& p_description);
+	void asgDescription(const std::string& p_description);
 
 	virtual double calculerInteret() const = 0;
 	virtual Compte* clone() const = 0;
@@ -55,5 +57,7 @@ private:
 	util::Date m_dateOuverture; //date à la création du compte
 	void verifieInvariant() const;
 };
+
+} //namespace banque
 
 #endif /* COMPTE_H_ */
