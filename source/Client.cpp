@@ -123,7 +123,7 @@ std::string Client::reqClientFormate() const{
 	os << "Client no de folio: " << reqNoFolio() << endl;
 	os << reqPrenom() << " " << reqNom() << endl;
 	os << reqTelephone() << endl;
-	os << "Date d'ouverture: " << m_dateNaissance.reqDateFormatee() << endl;
+	os << "Date de naissance : " << m_dateNaissance.reqDateFormatee() << endl;
 	return os.str();
 }
 
