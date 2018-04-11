@@ -11,6 +11,9 @@
 
 #include "ContratException.h"
 #include "Date.h"
+#include <iostream>
+#include <sstream>
+
 
 namespace banque{
 

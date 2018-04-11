@@ -7,16 +7,21 @@
 
 #ifndef EPARGNE_H_
 #define EPARGNE_H_
+#include "Compte.h"
 
 namespace banque {
 
 /*
  *
  */
-class Epargne {
+class Epargne: public Compte{
 public:
-	Epargne();
+	Epargne(int p_nocompte, double p_tauxInteret, double p_solde, const std::string& p_description="Epargne");
 	virtual ~Epargne();
+
+	virtual double calculerInteret() const;
+	virtual std::string reqCompteFormate() const;
+	virtual Compte* clone() const;
 };
 
 } /* namespace banque */

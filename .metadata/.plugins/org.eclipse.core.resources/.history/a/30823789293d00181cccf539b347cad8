@@ -1,0 +1,34 @@
+/*
+ * Epargne.cpp
+ *
+ *  Created on: 2018-04-10
+ *      Author: etudiant
+ */
+
+#include "Epargne.h"
+
+namespace banque {
+
+Epargne::Epargne() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Epargne::Epargne(int p_nocompte, double p_tauxInteret, double p_solde,
+		const std::string& p_description) {
+}
+
+Epargne::~Epargne() {
+	// TODO Auto-generated destructor stub
+}
+
+double Epargne::calculerInteret() {
+}
+
+void Epargne::reqCompteformate() const {
+}
+
+Compte* Epargne::clone() const {
+}
+
+} /* namespace banque */

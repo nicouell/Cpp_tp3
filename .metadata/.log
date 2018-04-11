@@ -247,3 +247,21 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-04-10 21:16:41.885
 !MESSAGE Indexed 'CompteTesteur' (1 sources, 234 headers) in 3,32 sec: 40 209 declarations; 57 362 references; 0 unresolved inclusions; 4 syntax errors; 19 unresolved names (0,019 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-10 21:47:23.451
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 21:52:49.604
+!MESSAGE Indexed 'TP3' (1 sources, 138 headers) in 0,796 sec: 10 344 declarations; 18 017 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 21:54:49.666
+!MESSAGE Indexed 'TP3' (1 sources, 139 headers) in 0,782 sec: 10 356 declarations; 18 024 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 22:13:21.073
+!MESSAGE Indexed 'source' (6 sources, 140 headers) in 0,859 sec: 10 530 declarations; 18 918 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 22:27:45.475
+!MESSAGE Indexed 'TP3' (1 sources, 139 headers) in 0,771 sec: 10 356 declarations; 18 026 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-10 22:30:01.652
+!MESSAGE Indexed 'TP3' (1 sources, 139 headers) in 0,75 sec: 10 356 declarations; 18 030 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

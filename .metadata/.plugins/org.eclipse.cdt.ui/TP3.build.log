@@ -1,7 +1,15 @@
-21:17:22 **** Clean-only build of configuration Debug for project TP3 ****
-make clean 
-rm -rf  ./Main.o  ./Main.d  TP3
+22:32:43 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
  
 
-21:17:22 Build Finished (took 66ms)
+22:32:43 Build Finished (took 269ms)
 
