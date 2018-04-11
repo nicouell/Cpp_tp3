@@ -1,0 +1,24 @@
+/*
+ * caca.h
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#ifndef CACA_H_
+#define CACA_H_
+
+namespace banque {
+
+/*
+ *
+ */
+class caca {
+public:
+	caca();
+	virtual ~caca();
+};
+
+} /* namespace banque */
+
+#endif /* CACA_H_ */

@@ -1,0 +1,21 @@
+/*
+ * caca.cpp
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#include "caca.h"
+
+namespace banque {
+
+caca::caca() {
+	// TODO Auto-generated constructor stub
+
+}
+
+caca::~caca() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace banque */

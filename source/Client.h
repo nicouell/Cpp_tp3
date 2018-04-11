@@ -11,7 +11,10 @@
 
 #include <iostream>
 #include "Date.h"
+#include "Cheque.h"
+#include "Epargne.h"
 #include "validationFormat.h"
+#include <vector>
 
 
 namespace banque{
@@ -24,8 +27,10 @@ namespace banque{
 class Client {
 public:
 	Client(int p_noFolio, const std::string& p_nom, const std::string& p_prenom, const std::string& p_telephone);
+	Client(const Client& other);
+	virtual ~Client();
 
-	int reqNoFolio();
+	int reqNoFolio() const;
 
 	std::string reqNom() const;
 
@@ -36,20 +41,24 @@ public:
 	std::string reqTelephone() const;
 	void asgTelephone(std::string& p_telephone);
 
-	std::string reqClientFormate();
+	std::string reqClientFormate() const;
 
 	bool operator==(const Client& p_client) const;
 	bool operator<(const Client& p_client) const;
 
-
+	std::vector<Compte*> m_vCompte;
+	void ajouterCompte(const Compte& p_nouveauCompte);
+	std::string reqReleves() const;
 
 private:
 	int m_noFolio;
 	std::string m_nom;
 	std::string m_prenom;
 	std::string m_telephone;
-	util::Date m_dateOuverture;
+	util::Date m_dateNaissance;
 	void verifieInvariant() const;
+	bool compteEstDejaPresent(int p_noCompte) const;
+	std::vector<Compte*> m_vComptes;
 };
 } //namespace
 

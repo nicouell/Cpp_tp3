@@ -35,8 +35,13 @@ Client::Client(int p_noFolio, const std::string& p_nom,
  * \return un entier int qui représente le numéro de folio du client
  */
 
+Client::~Client(){
+	for (unsigned int i = 0; i < m_vCompte.size(); i++){
+		m_vCompte[i] -> ~Compte();
+	}
+}
 
-int Client::reqNoFolio() {
+int Client::reqNoFolio() const{
 	return m_noFolio;
 }
 
@@ -67,7 +72,7 @@ std::string Client::reqPrenom() const {
 
 
 util::Date Client::reqDateDeNaissance() const {
-	return m_dateOuverture;
+	return m_dateNaissance;
 }
 
 /**
@@ -96,12 +101,12 @@ void Client::asgTelephone(std::string& p_telephone) {
  */
 
 
-std::string Client::reqClientFormate() {
+std::string Client::reqClientFormate() const{
 	ostringstream os;
 	os << "Client no de folio: " << reqNoFolio() << endl;
 	os << reqPrenom() << " " << reqNom() << endl;
 	os << reqTelephone() << endl;
-	os << "Date d'ouverture: " << m_dateOuverture.reqDateFormatee() << endl;
+	os << "Date d'ouverture: " << m_dateNaissance.reqDateFormatee() << endl;
 	return os.str();
 }
 
@@ -113,10 +118,7 @@ std::string Client::reqClientFormate() {
 
 
 bool Client::operator ==(const Client& p_client) const {
-	if (m_noFolio == p_client.m_noFolio && m_nom == p_client.m_nom && m_prenom == p_client.m_prenom && m_dateOuverture == p_client.m_dateOuverture && m_telephone == p_client.m_telephone)
-		return true;
-	else
-		return false;
+	return (m_noFolio == p_client.m_noFolio && m_nom == p_client.m_nom && m_prenom == p_client.m_prenom && m_dateNaissance == p_client.m_dateNaissance && m_telephone == p_client.m_telephone);
 }
 
 /**
@@ -129,4 +131,26 @@ bool Client::operator ==(const Client& p_client) const {
 bool Client::operator <(const Client& p_client) const{
 	return m_noFolio < p_client.m_noFolio;
 }
+
+std::string Client::reqReleves() const {
+	ostringstream os;
+	os << this->reqClientFormate();
+	for(unsigned int i = 0; i < m_vComptes.size(); i++ ){
+		os << m_vComptes[i]->reqCompteFormate();
+	}
+	return os.str();
+}
+
+bool Client::compteEstDejaPresent(int p_noCompte) const {
+}
+
+void Client::ajouterCompte(const Compte& p_nouveauCompte) {
+}
+
+void Client::verifieInvariant() const {
+	INVARIANT(m_noFolio >= 1000 && m_noFolio <= 10000);
+	INVARIANT(util::validerFormatNom(m_nom) && util::validerFormatNom(m_prenom));
+	INVARIANT(util::validerTelephone(m_telephone));
+}
+
 }
