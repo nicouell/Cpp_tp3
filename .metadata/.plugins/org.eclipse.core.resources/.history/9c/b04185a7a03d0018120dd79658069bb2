@@ -41,11 +41,8 @@ double Cheque::calculerInteret() const {
 		else if(this->reqNombreTransactions() > 35){
 			interet = this->reqTauxInteret()*this->reqSolde()*0.01;
 		}
+
 	}
-	else{
-		interet = 0;
-	}
-	return interet;
 }
 
 std::string Cheque::reqCompteFormate() const {

@@ -1,28 +1,8 @@
-11:29:20 **** Incremental Build of configuration Debug for project source ****
+11:54:48 **** Incremental Build of configuration Debug for project source ****
 make all 
 Building file: ../Cheque.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cheque.d" -MT"Cheque.o" -o "Cheque.o" "../Cheque.cpp"
-../Cheque.cpp: In member function ‘virtual double banque::Cheque::calculerInteret() const’:
-../Cheque.cpp:31:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../Cheque.cpp: In member function ‘virtual std::__cxx11::string banque::Cheque::reqCompteFormate() const’:
-../Cheque.cpp:34:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../Cheque.cpp: In member function ‘virtual banque::Compte* banque::Cheque::clone() const’:
-../Cheque.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../Cheque.cpp: In member function ‘double banque::Cheque::reqTauxInteretMinimum() const’:
-../Cheque.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-../Cheque.cpp: In member function ‘int banque::Cheque::reqNombreTransactions() const’:
-../Cheque.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
 Finished building: ../Cheque.cpp
  
 Building target: libsource.a
@@ -32,5 +12,5 @@ ar: création de libsource.a
 Finished building target: libsource.a
  
 
-11:29:20 Build Finished (took 185ms)
+11:54:48 Build Finished (took 237ms)
 

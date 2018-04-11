@@ -27,25 +27,6 @@ Cheque::Cheque(int p_noCompte, double p_tauxInteret, double p_solde,
 Cheque::~Cheque() {}
 
 double Cheque::calculerInteret() const {
-	double interet = 0;
-	if(this->reqSolde() > 0){
-		if(this->reqNombreTransactions() >= 0 && this->reqNombreTransactions() <= 10){
-			interet = this->reqTauxInteretMinimum()*this->reqSolde()*0.01;
-		}
-		else if(this->reqNombreTransactions() >= 11 && this->reqNombreTransactions() <= 25){
-			interet = this->reqTauxInteret()*this->reqSolde()*0.004;
-		}
-		else if(this->reqNombreTransactions() >= 26 && this->reqNombreTransactions() <= 35){
-			interet = this->reqTauxInteret()*this->reqSolde()*0.008;
-		}
-		else if(this->reqNombreTransactions() > 35){
-			interet = this->reqTauxInteret()*this->reqSolde()*0.01;
-		}
-	}
-	else{
-		interet = 0;
-	}
-	return interet;
 }
 
 std::string Cheque::reqCompteFormate() const {
