@@ -1,4 +1,4 @@
-16:19:24 **** Incremental Build of configuration Debug for project source ****
+16:33:35 **** Incremental Build of configuration Debug for project source ****
 make all 
 Building file: ../Client.cpp
 Invoking: GCC C++ Compiler
@@ -12,5 +12,5 @@ ar: création de libsource.a
 Finished building target: libsource.a
  
 
-16:19:24 Build Finished (took 753ms)
+16:33:35 Build Finished (took 484ms)
 

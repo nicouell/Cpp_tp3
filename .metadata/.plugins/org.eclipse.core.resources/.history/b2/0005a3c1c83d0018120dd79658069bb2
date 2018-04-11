@@ -1,0 +1,16 @@
+/*
+ * ClientTesteur.cpp
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#include <gtest/gtest.h>
+#include "Client.h"
+
+using namespace std;
+using namespace banque;
+
+TEST(Client, constructeurAvecParametreValide){
+	Client t_client(1500, "ouellet", "nicola", "581 246-4094");
+}

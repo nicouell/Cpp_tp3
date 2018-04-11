@@ -1,13 +1,39 @@
-16:19:24 **** Incremental Build of configuration Debug for project source ****
+16:43:46 **** Build of configuration Debug for project ClientTesteur ****
 make all 
-Building file: ../Client.cpp
+Building file: ../ClientTesteur.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Client.d" -MT"Client.o" -o "Client.o" "../Client.cpp"
-Finished building: ../Client.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
+Finished building: ../ClientTesteur.cpp
  
-Building target: libsource.a
-Invoking: GCC Archiver
-ar -r  "libsource.a"  ./Cheque.o ./Client.o ./Compte.o ./ContratException.o ./Date.o ./Epargne.o ./validationFormat.o   
-ar: création de libsource.a
-Finished building target: libsource.a
+Building target: ClientTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: ClientTesteur
+ 
+16:44:04 **** Incremental Build of configuration Debug for project ClientTesteur ****
+make all 
+make: rien à faire pour « all ».
+17:05:56 **** Incremental Build of configuration Debug for project ClientTesteur ****
+make all 
+Building file: ../ClientTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
+Finished building: ../ClientTesteur.cpp
+ 
+Building target: ClientTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: ClientTesteur
+ 
+17:16:23 **** Incremental Build of configuration Debug for project ClientTesteur ****
+make all 
+Building file: ../ClientTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
+Finished building: ../ClientTesteur.cpp
+ 
+Building target: ClientTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: ClientTesteur
  
