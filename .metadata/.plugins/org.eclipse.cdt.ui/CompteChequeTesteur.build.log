@@ -1,15 +1,6 @@
-12:08:00 **** Build of configuration Debug for project CompteChequeTesteur ****
+14:03:47 **** Incremental Build of configuration Debug for project CompteChequeTesteur ****
 make all 
-Building file: ../CompteChequeTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteChequeTesteur.d" -MT"CompteChequeTesteur.o" -o "CompteChequeTesteur.o" "../CompteChequeTesteur.cpp"
-Finished building: ../CompteChequeTesteur.cpp
- 
-Building target: CompteChequeTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteChequeTesteur"  ./CompteChequeTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: CompteChequeTesteur
- 
+make: rien à faire pour « all ».
 
-12:08:00 Build Finished (took 170ms)
+14:03:47 Build Finished (took 68ms)
 

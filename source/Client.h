@@ -31,7 +31,7 @@ public:
 
 	std::string reqPrenom() const;
 
-	util::Date reqDateOuverture() const;
+	util::Date reqDateDeNaissance() const;
 
 	std::string reqTelephone() const;
 	void asgTelephone(std::string& p_telephone);
@@ -49,6 +49,7 @@ private:
 	std::string m_prenom;
 	std::string m_telephone;
 	util::Date m_dateOuverture;
+	void verifieInvariant() const;
 };
 } //namespace
 

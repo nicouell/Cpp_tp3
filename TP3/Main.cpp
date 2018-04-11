@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Client.h"
 #include "Epargne.h"
+#include "Cheque.h"
 
 using namespace std;
 using namespace util;
@@ -22,6 +23,12 @@ int main(){
 	cout << epargne1.reqCompteFormate();
 	epargne1.asgSolde(2000);
 	cout << epargne1.reqCompteFormate();
+
+	Cheque cheque1(1500, 1.5, 5000, 25, 0.2, "Cheque");
+	cout << cheque1.reqCompteFormate();
+	cheque1.asgSolde(2000);
+	cout << cheque1.reqCompteFormate();
+
 
 	return 0;
 }

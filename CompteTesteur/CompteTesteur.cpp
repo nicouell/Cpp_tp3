@@ -8,7 +8,6 @@
 #include <gtest/gtest.h>
 #include "Compte.h"
 #include "Date.h"
-#include <iostream>
 
 using namespace std;
 using namespace banque;
@@ -31,18 +30,6 @@ public:
 	};
 };
 
-/**
- * \class UnCompte
- * \brief class de test permettant de tester la classe abstraite Compte
- */
-class UnCompte: public ::testing::Test{
-
-public:
-	UnCompte():
-		t_compte(1234, 0.3, 2000, "description"){
-	}
-	CompteTest t_compte;
-};
 
 /**
  * \brief Test du Constructeur Compte(int noCompte, double tauxInteret, double solde, const string& description))
@@ -67,6 +54,20 @@ TEST(Compte, ConstructeurAvecDescriptionInvalide){
 	ASSERT_THROW(CompteTest compteTest(5000, 0.3, 1500, ""), ContratException);
 }
 
+/**
+ * \class UnCompte
+ * \brief class de test permettant de tester la classe abstraite Compte
+ */
+class UnCompte: public ::testing::Test{
+
+public:
+	UnCompte():
+		t_compte(1234, 0.3, 2000, "description"){
+	}
+	CompteTest t_compte;
+};
+
+
 TEST_F(UnCompte, reqNoCompte){
 	ASSERT_EQ(1234, t_compte.reqNoCompte());
 }
@@ -81,6 +82,10 @@ TEST_F(UnCompte, reqSolde){
 
 TEST_F(UnCompte, reqDercription){
 	ASSERT_EQ("description", t_compte.reqDescription());
+}
+
+TEST_F(UnCompte, reqDateOuverture){
+	ASSERT_EQ(util::Date(), t_compte.reqDateOuverture());
 }
 
 TEST_F(UnCompte, reqCompteFormate){

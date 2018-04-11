@@ -80,7 +80,7 @@ int Cheque::reqNombreTransactions() const {
 
 void Cheque::verifieInvariant() const {
 	INVARIANT(m_nombreTransactions <= 40);
-	INVARIANT(m_tauxInteretMinimum >= 0.1);
+	INVARIANT(m_tauxInteretMinimum <= this->reqTauxInteret());
 }
 
 } /* namespace banque */

@@ -21,4 +21,59 @@ TEST(Epargne, constructeurAvecParametreValide){
 	ASSERT_EQ("description", t_cheque.reqDescription());
 }
 
+TEST(Epargne, ConstructeurAvecPrametreInvalide){
+	ASSERT_THROW(Cheque t_cheque(1500, 5.0, 5000, 50, 0.2, "description"), PreconditionException);
+	ASSERT_THROW(Cheque t_cheque(1500, 0.3, 5000, 25, 0.5, "description"), PreconditionException);
+}
+
+class UnCompteCheque: public ::testing::Test{
+public:
+	UnCompteCheque():
+		t_cheque(1500, 1.5, 5000, 25, 0.2, "description"){
+	}
+	Cheque t_cheque;
+};
+
+TEST_F(UnCompteCheque, reqTauxInteretMinimum){
+	ASSERT_EQ(0.2, t_cheque.reqTauxInteretMinimum());
+}
+
+TEST_F(UnCompteCheque, reqNombreTransactions){
+	ASSERT_EQ(25, t_cheque.reqNombreTransactions());
+}
+
+TEST_F(UnCompteCheque, asgNombreTransaction){
+	t_cheque.asgNombreTransactions(30);
+	ASSERT_EQ(30, t_cheque.reqNombreTransactions());
+}
+
+TEST_F(UnCompteCheque, reqCalculerInteret2){
+	t_cheque.asgNombreTransactions(2);
+	ASSERT_EQ(t_cheque.reqTauxInteretMinimum()*t_cheque.reqSolde()*0.01, t_cheque.calculerInteret());
+}
+TEST_F(UnCompteCheque, reqCalculerInteret15){
+	t_cheque.asgNombreTransactions(15);
+	ASSERT_EQ(t_cheque.reqTauxInteret()*t_cheque.reqSolde()*0.004, t_cheque.calculerInteret());
+}
+TEST_F(UnCompteCheque, reqCalculerInteret30){
+	t_cheque.asgNombreTransactions(30);
+	ASSERT_EQ(t_cheque.reqTauxInteret()*t_cheque.reqSolde()*0.008, t_cheque.calculerInteret());
+}
+TEST_F(UnCompteCheque, reqCalculerInteret45){
+	t_cheque.asgNombreTransactions(37);
+	ASSERT_EQ(t_cheque.reqTauxInteret()*t_cheque.reqSolde()*0.01, t_cheque.calculerInteret());
+}
+TEST_F(UnCompteCheque, reqCalculerInteret0){
+	t_cheque.asgSolde(0);
+	ASSERT_EQ(0, t_cheque.calculerInteret());
+}
+
+TEST_F(UnCompteCheque, reqCompteFormate){
+	double interet = t_cheque.calculerInteret();
+	t_cheque.asgSolde(5000);
+	stringstream ss;
+	ss << interet;
+	string str = ss.str();
+	ASSERT_EQ("Compte Cheque\nnumero: 1500\nDescription: description\nDate d'ouverture: "+ t_cheque.reqDateOuverture().reqDateFormatee() +"\nTaux d'interet: 1.5\nSolde: 5000$\nnombre de transactions: 25\nTaux d'interet minimum: 0.2\nInteret: " + str + "$\n" , t_cheque.reqCompteFormate());
+}
 
