@@ -1,0 +1,18 @@
+/*
+ * CompteChequeTesteur.cpp
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#include <gtest/gtest.h>
+#include "Cheque.h"
+
+using namespace std;
+using namespace banque;
+
+TEST(Epargne, constructeurAvecParametreValide){
+
+}
+
+

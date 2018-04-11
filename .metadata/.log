@@ -918,3 +918,15 @@ Caused by: java.lang.IllegalArgumentException: Index out of bounds
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 11:09:52.328
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-11 12:04:25.672
+!MESSAGE Indexed 'CompteChequeTesteur' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 12:04:56.082
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-11 12:07:58.084
+!MESSAGE Indexed 'CompteChequeTesteur' (0 sources, 0 headers) in 0,02 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 12:11:03.500
+!MESSAGE No .vrapperrc or _vrapperrc found.
