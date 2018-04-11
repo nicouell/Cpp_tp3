@@ -46,6 +46,7 @@ public:
 	bool operator==(const Client& p_client) const;
 	bool operator<(const Client& p_client) const;
 
+	std::vector<Compte*> m_vCompte;
 	void ajouterCompte(const Compte& p_nouveauCompte);
 	std::string reqReleves() const;
 

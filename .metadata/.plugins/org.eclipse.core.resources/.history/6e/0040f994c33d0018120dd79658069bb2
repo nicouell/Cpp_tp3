@@ -153,7 +153,6 @@ bool Client::compteEstDejaPresent(int p_noCompte) const {
 }
 
 void Client::ajouterCompte(const Compte& p_nouveauCompte) {
-	m_vComptes.push_back(p_nouveauCompte.clone());
 }
 
 void Client::verifieInvariant() const {

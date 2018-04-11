@@ -1,38 +1,9 @@
-15:33:32 **** Incremental Build of configuration Debug for project source ****
+16:02:07 **** Incremental Build of configuration Debug for project source ****
 make all 
 Building file: ../Client.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Client.d" -MT"Client.o" -o "Client.o" "../Client.cpp"
-../Client.cpp: In member function ‘bool banque::Client::compteEstDejaPresent(int) const’:
-../Client.cpp:140:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
 Finished building: ../Client.cpp
- 
-Building file: ../Compte.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Compte.d" -MT"Compte.o" -o "Compte.o" "../Compte.cpp"
-Finished building: ../Compte.cpp
- 
-Building file: ../ContratException.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ContratException.d" -MT"ContratException.o" -o "ContratException.o" "../ContratException.cpp"
-Finished building: ../ContratException.cpp
- 
-Building file: ../Date.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Date.d" -MT"Date.o" -o "Date.o" "../Date.cpp"
-Finished building: ../Date.cpp
- 
-Building file: ../Epargne.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Epargne.d" -MT"Epargne.o" -o "Epargne.o" "../Epargne.cpp"
-Finished building: ../Epargne.cpp
- 
-Building file: ../validationFormat.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"validationFormat.d" -MT"validationFormat.o" -o "validationFormat.o" "../validationFormat.cpp"
-Finished building: ../validationFormat.cpp
  
 Building target: libsource.a
 Invoking: GCC Archiver

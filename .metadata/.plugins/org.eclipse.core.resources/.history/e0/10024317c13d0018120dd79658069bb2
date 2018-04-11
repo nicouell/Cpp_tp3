@@ -36,8 +36,8 @@ Client::Client(int p_noFolio, const std::string& p_nom,
  */
 
 Client::~Client(){
-	for (unsigned int i = 0; i < m_vComptes.size(); i++){
-		m_vComptes[i] -> ~Compte();
+	for (unsigned int i = 0; i < m_vCompte.size(); i++){
+		m_vCompte[i] -> ~Compte();
 	}
 }
 
@@ -142,18 +142,9 @@ std::string Client::reqReleves() const {
 }
 
 bool Client::compteEstDejaPresent(int p_noCompte) const {
-	bool comptePresent = false;
-	for(unsigned int i = 0; i < m_vComptes.size(); i++ ){
-		if(m_vComptes[i]->reqNoCompte() == p_noCompte){
-				comptePresent = true;
-		}
-	}
-	return comptePresent;
-
 }
 
 void Client::ajouterCompte(const Compte& p_nouveauCompte) {
-	m_vComptes.push_back(p_nouveauCompte.clone());
 }
 
 void Client::verifieInvariant() const {
