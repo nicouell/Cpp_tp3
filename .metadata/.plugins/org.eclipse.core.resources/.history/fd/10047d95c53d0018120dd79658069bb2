@@ -25,19 +25,9 @@ namespace banque{
  */
 
 
-Client::Client(int p_noFolio, const string& p_nom,
-		const string& p_prenom, const string& p_telephone):m_noFolio(p_noFolio), m_nom(p_nom), m_prenom(p_prenom), m_telephone(p_telephone)
+Client::Client(int p_noFolio, const std::string& p_nom,
+		const std::string& p_prenom, const std::string& p_telephone):m_noFolio(p_noFolio), m_nom(p_nom), m_prenom(p_prenom), m_telephone(p_telephone)
 {
-	PRECONDITION(p_noFolio >= 1000 && p_noFolio <= 10000);
-	PRECONDITION(util::validerFormatNom(p_nom) && util::validerFormatNom(p_prenom));
-	PRECONDITION(util::validerTelephone(p_telephone));
-
-	POSTCONDITION(m_noFolio == p_noFolio);
-	POSTCONDITION(m_nom == p_nom);
-	POSTCONDITION(m_prenom == p_prenom);
-	POSTCONDITION(m_telephone == p_telephone);
-
-	INVARIANTS();
 }
 
 /**
@@ -102,14 +92,7 @@ std::string Client::reqTelephone() const {
 
 
 void Client::asgTelephone(std::string& p_telephone) {
-
-	PRECONDITION(util::validerTelephone(p_telephone));
-
 	m_telephone = p_telephone;
-
-	POSTCONDITION(m_telephone == p_telephone);
-
-	INVARIANTS();
 }
 
 /**
