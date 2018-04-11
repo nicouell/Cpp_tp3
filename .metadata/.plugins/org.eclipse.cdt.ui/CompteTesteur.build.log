@@ -1,4 +1,4 @@
-21:16:41 **** Build of configuration Debug for project CompteTesteur ****
+10:29:56 **** Incremental Build of configuration Debug for project CompteTesteur ****
 make all 
 Building file: ../CompteTesteur.cpp
 Invoking: GCC C++ Compiler
@@ -11,5 +11,5 @@ g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteTesteur"  ./CompteTeste
 Finished building target: CompteTesteur
  
 
-21:16:42 Build Finished (took 864ms)
+10:29:58 Build Finished (took 1s.756ms)
 

@@ -1,39 +1,33 @@
-23:15:53 **** Build of configuration Debug for project CompteEpargneTesteur ****
+11:29:20 **** Incremental Build of configuration Debug for project source ****
 make all 
-Building file: ../CompteEpargneTesteur.cpp
+Building file: ../Cheque.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteEpargneTesteur.d" -MT"CompteEpargneTesteur.o" -o "CompteEpargneTesteur.o" "../CompteEpargneTesteur.cpp"
-Finished building: ../CompteEpargneTesteur.cpp
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cheque.d" -MT"Cheque.o" -o "Cheque.o" "../Cheque.cpp"
+../Cheque.cpp: In member function ‘virtual double banque::Cheque::calculerInteret() const’:
+../Cheque.cpp:31:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Cheque.cpp: In member function ‘virtual std::__cxx11::string banque::Cheque::reqCompteFormate() const’:
+../Cheque.cpp:34:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Cheque.cpp: In member function ‘virtual banque::Compte* banque::Cheque::clone() const’:
+../Cheque.cpp:37:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Cheque.cpp: In member function ‘double banque::Cheque::reqTauxInteretMinimum() const’:
+../Cheque.cpp:43:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../Cheque.cpp: In member function ‘int banque::Cheque::reqNombreTransactions() const’:
+../Cheque.cpp:46:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../Cheque.cpp
  
-Building target: CompteEpargneTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteEpargneTesteur"  ./CompteEpargneTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: CompteEpargneTesteur
- 
-23:16:19 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
-make all 
-make: rien à faire pour « all ».
-23:30:06 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
-make all 
-Building file: ../CompteEpargneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteEpargneTesteur.d" -MT"CompteEpargneTesteur.o" -o "CompteEpargneTesteur.o" "../CompteEpargneTesteur.cpp"
-Finished building: ../CompteEpargneTesteur.cpp
- 
-Building target: CompteEpargneTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteEpargneTesteur"  ./CompteEpargneTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: CompteEpargneTesteur
- 
-23:43:01 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
-make all 
-Building file: ../CompteEpargneTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CompteEpargneTesteur.d" -MT"CompteEpargneTesteur.o" -o "CompteEpargneTesteur.o" "../CompteEpargneTesteur.cpp"
-Finished building: ../CompteEpargneTesteur.cpp
- 
-Building target: CompteEpargneTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteEpargneTesteur"  ./CompteEpargneTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: CompteEpargneTesteur
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./Cheque.o ./Client.o ./Compte.o ./ContratException.o ./Date.o ./Epargne.o ./validationFormat.o   
+ar: création de libsource.a
+Finished building target: libsource.a
  

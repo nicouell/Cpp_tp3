@@ -1,0 +1,47 @@
+/*
+ * Cheque.cpp
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#include "Cheque.h"
+
+namespace banque {
+
+Cheque::Cheque() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Cheque::Cheque(int p_nocompte, double p_tauxInteret, double p_solde,
+		int p_nombreTransactions, double p_tauxInteretMinimum,
+		const std::string& p_description) {
+}
+
+Cheque::~Cheque() {
+	// TODO Auto-generated destructor stub
+}
+
+double Cheque::calculerInteret() const {
+}
+
+std::string Cheque::reqCompteFormate() const {
+}
+
+Compte* Cheque::clone() const {
+}
+
+void Cheque::asgNombreTransactions(int p_nombreTransactions) {
+}
+
+double Cheque::reqTauxInteretMinimum() const {
+}
+
+int Cheque::reqNombreTransactions() const {
+}
+
+void Cheque::verifieInvariant() const {
+}
+
+} /* namespace banque */

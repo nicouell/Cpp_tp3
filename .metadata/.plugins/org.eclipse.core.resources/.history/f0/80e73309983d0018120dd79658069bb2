@@ -1,0 +1,21 @@
+/*
+ * Cheque.cpp
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#include "Cheque.h"
+
+namespace banque {
+
+Cheque::Cheque() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Cheque::~Cheque() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace banque */

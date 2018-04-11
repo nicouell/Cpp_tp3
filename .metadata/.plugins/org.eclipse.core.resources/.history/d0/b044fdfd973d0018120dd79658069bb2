@@ -1,0 +1,24 @@
+/*
+ * Cheque.h
+ *
+ *  Created on: 2018-04-11
+ *      Author: etudiant
+ */
+
+#ifndef CHEQUE_H_
+#define CHEQUE_H_
+
+namespace banque {
+
+/*
+ *
+ */
+class Cheque {
+public:
+	Cheque();
+	virtual ~Cheque();
+};
+
+} /* namespace banque */
+
+#endif /* CHEQUE_H_ */

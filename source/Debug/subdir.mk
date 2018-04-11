@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../Cheque.cpp \
 ../Client.cpp \
 ../Compte.cpp \
 ../ContratException.cpp \
@@ -12,6 +13,7 @@ CPP_SRCS += \
 ../validationFormat.cpp 
 
 OBJS += \
+./Cheque.o \
 ./Client.o \
 ./Compte.o \
 ./ContratException.o \
@@ -20,6 +22,7 @@ OBJS += \
 ./validationFormat.o 
 
 CPP_DEPS += \
+./Cheque.d \
 ./Client.d \
 ./Compte.d \
 ./ContratException.d \
