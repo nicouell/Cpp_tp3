@@ -129,9 +129,8 @@ int main() {
 	int nombreTransaction;
 	bool quit = false;
 
-	cin.ignore();
-
 	while(!quit){
+		cin.ignore();
 		cout << "Voulez-vous créer un compte cheque ou un compte epargne ?" << endl;
 		getline(cin, typeDeCompte);
 
@@ -159,11 +158,11 @@ int main() {
 			while(!validation){
 				cout << "Entrez le taux d'intéret du compte:" << endl;
 				cin >> tauxInteret;
-				if(tauxInteret >= 0.1 && tauxInteret < 100){
+				if(tauxInteret >= 0 && tauxInteret < 100){
 					validation = true;
 				}
 				else{
-					cout << "Le taux d'interet doit être entre 0.1 et 100" << endl;
+					cout << "Le taux d'interet doit être entre 0 et 100" << endl;
 				}
 			}
 
@@ -211,11 +210,11 @@ int main() {
 			while(!validation){
 				cout << "Entrez le taux d'intéret du compte:" << endl;
 				cin >> tauxInteret;
-				if(tauxInteret >= 0.1 && tauxInteret < 3.5){
+				if(tauxInteret >= 0 && tauxInteret < 100){
 					validation = true;
 				}
 				else{
-					cout << "Le taux d'interet doit être entre 0.1 et 3.5" << endl;
+					cout << "Le taux d'interet doit être entre 0 et 100" << endl;
 				}
 			}
 
@@ -230,15 +229,9 @@ int main() {
 		cout << "-----------------------------------" << endl;
 		cout << "Si vous voulez quitter écrivez quit sinon écrivez rester ?" << endl;
 		getline(cin, quitterOuRester);
-		if(quitterOuRester == "quit"){
-			quit = true;
-		}
-		else{
-			quit = false;
-		}
+		quit = quitterOuRester == "quit";
 	}
 
-	cout << "Au revoir et à la prochaine.";
 	return 0;
 
 }

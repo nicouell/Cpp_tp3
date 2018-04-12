@@ -122,6 +122,8 @@ int main() {
 
 
 	string typeDeCompte;
+	string chequeID;
+	string epargneID;
 	string quitterOuRester;
 	int noCompte;
 	double tauxInteret;
@@ -130,11 +132,10 @@ int main() {
 	bool quit = false;
 
 	cin.ignore();
+	cout << "Voulez-vous créer un compte cheque ou un compte epargne ?" << endl;
+	getline(cin, typeDeCompte);
 
 	while(!quit){
-		cout << "Voulez-vous créer un compte cheque ou un compte epargne ?" << endl;
-		getline(cin, typeDeCompte);
-
 		if(typeDeCompte == "cheque"){
 			cout << "Création d'un compte Chèque" << endl;
 			cout << "-----------------------------------" << endl;
@@ -142,6 +143,7 @@ int main() {
 				cout << "Entrez le numéro de compte désiré:" << endl;
 				cin >> noCompte;
 				if(noCompte > 0){
+					chequeID = noCompte;
 					validation = true;
 				}
 				else{
@@ -159,11 +161,11 @@ int main() {
 			while(!validation){
 				cout << "Entrez le taux d'intéret du compte:" << endl;
 				cin >> tauxInteret;
-				if(tauxInteret >= 0.1 && tauxInteret < 100){
+				if(tauxInteret >= 0 && tauxInteret < 100){
 					validation = true;
 				}
 				else{
-					cout << "Le taux d'interet doit être entre 0.1 et 100" << endl;
+					cout << "Le taux d'interet doit être entre 0 et 100" << endl;
 				}
 			}
 
@@ -186,6 +188,13 @@ int main() {
 			nicola.ajouterCompte(chequeID);
 			cout << nicola.reqReleves() << endl;
 
+			cin.ignore();
+			cout << "-----------------------------------" << endl;
+			cout << "Si vous voulez quitter écrivez quit sinon écrivez rester ?" << endl;
+			getline(cin, quitterOuRester);
+
+			quit = quitterOuRester == "quit";
+
 		}
 		else if(typeDeCompte == "epargne"){
 			cout << "Création d'un compte Epargne" << endl;
@@ -194,6 +203,7 @@ int main() {
 				cout << "Entrez le numéro de compte désiré:" << endl;
 				cin >> noCompte;
 				if(noCompte > 0){
+					chequeID = noCompte;
 					validation = true;
 				}
 				else{
@@ -211,11 +221,11 @@ int main() {
 			while(!validation){
 				cout << "Entrez le taux d'intéret du compte:" << endl;
 				cin >> tauxInteret;
-				if(tauxInteret >= 0.1 && tauxInteret < 3.5){
+				if(tauxInteret >= 0 && tauxInteret < 100){
 					validation = true;
 				}
 				else{
-					cout << "Le taux d'interet doit être entre 0.1 et 3.5" << endl;
+					cout << "Le taux d'interet doit être entre 0 et 100" << endl;
 				}
 			}
 
@@ -225,20 +235,16 @@ int main() {
 			nicola.ajouterCompte(epargneID);
 			cout << nicola.reqReleves() << endl;
 
-		}
-		cin.ignore();
-		cout << "-----------------------------------" << endl;
-		cout << "Si vous voulez quitter écrivez quit sinon écrivez rester ?" << endl;
-		getline(cin, quitterOuRester);
-		if(quitterOuRester == "quit"){
-			quit = true;
-		}
-		else{
-			quit = false;
+			cin.ignore();
+			cout << "-----------------------------------" << endl;
+			cout << "Si vous voulez quitter écrivez quit sinon écrivez rester ?" << endl;
+			getline(cin, quitterOuRester);
+
+			quit = quitterOuRester == "quit";
+
 		}
 	}
 
-	cout << "Au revoir et à la prochaine.";
 	return 0;
 
 }

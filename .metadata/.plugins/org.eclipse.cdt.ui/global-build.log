@@ -63,3 +63,175 @@ Invoking: GCC C++ Linker
 g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
 Finished building target: TP3
  
+10:37:09 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:130:7: warning: unused variable ‘quit’ [-Wunused-variable]
+  bool quit = false;
+       ^
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+10:39:45 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:130:7: warning: unused variable ‘quit’ [-Wunused-variable]
+  bool quit = false;
+       ^
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+10:41:24 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:130:7: warning: unused variable ‘quit’ [-Wunused-variable]
+  bool quit = false;
+       ^
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+10:43:47 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:130:7: warning: unused variable ‘quit’ [-Wunused-variable]
+  bool quit = false;
+       ^
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:00:30 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:03:22 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:13:48 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:16:46 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:20:48 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:25:07 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:25:34 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:30:35 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 
+11:33:50 **** Incremental Build of configuration Debug for project TP3 ****
+make all 
+Building file: ../Main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
+ 
+Building target: TP3
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
+ 

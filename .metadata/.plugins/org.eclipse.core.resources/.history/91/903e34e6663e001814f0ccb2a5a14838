@@ -238,7 +238,6 @@ int main() {
 		}
 	}
 
-	cout << "Au revoir et à la prochaine.";
 	return 0;
 
 }

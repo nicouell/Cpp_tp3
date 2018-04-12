@@ -129,9 +129,8 @@ int main() {
 	int nombreTransaction;
 	bool quit = false;
 
-	cin.ignore();
-
 	while(!quit){
+		cin.ignore();
 		cout << "Voulez-vous créer un compte cheque ou un compte epargne ?" << endl;
 		getline(cin, typeDeCompte);
 
@@ -238,7 +237,6 @@ int main() {
 		}
 	}
 
-	cout << "Au revoir et à la prochaine.";
 	return 0;
 
 }

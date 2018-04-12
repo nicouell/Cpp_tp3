@@ -5034,3 +5034,22 @@ Caused by: java.lang.IllegalArgumentException: Index out of bounds
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-12 09:53:18.993
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-12 10:53:27.835
+!MESSAGE No .vrapperrc or _vrapperrc found.
+!SESSION 2018-04-12 11:29:03.493 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=fr_CA
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product -data .
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-04-12 11:29:07.750
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-12 11:29:30.471
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-12 11:29:30.535
+!MESSAGE No .vrapperrc or _vrapperrc found.
