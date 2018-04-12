@@ -1,10 +1,6 @@
-21:07:53 **** Incremental Build of configuration Debug for project TP3 ****
+21:57:16 **** Incremental Build of configuration Debug for project TP3 ****
 make all 
-Building target: TP3
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
-Finished building target: TP3
- 
+make: rien à faire pour « all ».
 
-21:07:54 Build Finished (took 176ms)
+21:57:16 Build Finished (took 72ms)
 

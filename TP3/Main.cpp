@@ -16,7 +16,7 @@ using namespace banque;
 
 int main(){
 	Date date1();
-	Client client1(1500, "Nicola", "Ouellet", "418 581-4094");
+	Client client1(1500, "Nicola", "Ouellet", "418 581-4094", Date(19, 10, 1994));
 	cout << client1.reqClientFormate();
 
 	Epargne epargne1(1522, 0.5, 1000, "Epargne");

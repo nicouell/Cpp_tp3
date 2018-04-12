@@ -26,7 +26,7 @@ namespace banque{
 
 class Client {
 public:
-	Client(int p_noFolio, const std::string& p_nom, const std::string& p_prenom, const std::string& p_telephone);
+	Client(int p_noFolio, const std::string& p_nom, const std::string& p_prenom, const std::string& p_telephone, const util::Date& p_dateNaissance);
 	Client(const Client& other);
 	virtual ~Client();
 
@@ -39,7 +39,7 @@ public:
 	util::Date reqDateDeNaissance() const;
 
 	std::string reqTelephone() const;
-	void asgTelephone(std::string& p_telephone);
+	void asgTelephone(const std::string& p_telephone);
 
 	std::string reqClientFormate() const;
 

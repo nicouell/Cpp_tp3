@@ -1,6 +1,16 @@
-21:07:54 **** Incremental Build of configuration Debug for project source ****
+21:57:16 **** Incremental Build of configuration Debug for project source ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../Client.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Client.d" -MT"Client.o" -o "Client.o" "../Client.cpp"
+Finished building: ../Client.cpp
+ 
+Building target: libsource.a
+Invoking: GCC Archiver
+ar -r  "libsource.a"  ./Cheque.o ./Client.o ./Compte.o ./ContratException.o ./Date.o ./Epargne.o ./validationFormat.o   
+ar: création de libsource.a
+Finished building target: libsource.a
+ 
 
-21:07:54 Build Finished (took 69ms)
+21:57:17 Build Finished (took 288ms)
 

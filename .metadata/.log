@@ -4905,3 +4905,27 @@ Caused by: java.lang.IllegalArgumentException: Index out of bounds
 
 !ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 21:03:52.248
 !MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 21:15:26.688
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 21:15:47.083
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-11 21:17:16.108
+!MESSAGE Indexed 'ClientTesteur' (1 sources, 207 headers) in 4,79 sec: 33 878 declarations; 46 380 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 21:26:56.476
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-11 21:30:13.380
+!MESSAGE Indexed 'ClientTesteur' (1 sources, 207 headers) in 3,47 sec: 33 880 declarations; 46 415 references; 0 unresolved inclusions; 0 syntax errors; 5 unresolved names (0,0062 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-11 21:31:34.373
+!MESSAGE Indexed 'ClientTesteur' (1 sources, 207 headers) in 3,04 sec: 33 880 declarations; 46 415 references; 0 unresolved inclusions; 0 syntax errors; 5 unresolved names (0,0062 %)
+
+!ENTRY net.sourceforge.vrapper.eclipse 1 0 2018-04-11 21:39:01.290
+!MESSAGE No .vrapperrc or _vrapperrc found.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-04-11 21:40:27.160
+!MESSAGE Indexed 'TP3' (1 sources, 146 headers) in 0,983 sec: 11 403 declarations; 20 380 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

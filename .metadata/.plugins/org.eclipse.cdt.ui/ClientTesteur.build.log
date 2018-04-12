@@ -1,6 +1,15 @@
-21:07:58 **** Incremental Build of configuration Debug for project ClientTesteur ****
+22:05:40 **** Incremental Build of configuration Debug for project ClientTesteur ****
 make all 
-make: rien à faire pour « all ».
+Building file: ../ClientTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
+Finished building: ../ClientTesteur.cpp
+ 
+Building target: ClientTesteur
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
+Finished building target: ClientTesteur
+ 
 
-21:07:59 Build Finished (took 68ms)
+22:05:40 Build Finished (took 768ms)
 

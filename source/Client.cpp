@@ -26,7 +26,8 @@ namespace banque{
 
 
 Client::Client(int p_noFolio, const string& p_nom,
-		const string& p_prenom, const string& p_telephone):m_noFolio(p_noFolio), m_nom(p_nom), m_prenom(p_prenom), m_telephone(p_telephone)
+		const string& p_prenom, const string& p_telephone, const util::Date& p_dateNaissance):
+				m_noFolio(p_noFolio), m_nom(p_nom), m_prenom(p_prenom), m_telephone(p_telephone), m_dateNaissance(p_dateNaissance)
 {
 	PRECONDITION(p_noFolio >= 1000 && p_noFolio <= 10000);
 	PRECONDITION(util::validerFormatNom(p_nom) && util::validerFormatNom(p_prenom));
@@ -101,7 +102,7 @@ std::string Client::reqTelephone() const {
  */
 
 
-void Client::asgTelephone(std::string& p_telephone) {
+void Client::asgTelephone(const std::string& p_telephone) {
 
 	PRECONDITION(util::validerTelephone(p_telephone));
 
@@ -135,7 +136,7 @@ std::string Client::reqClientFormate() const{
 
 
 bool Client::operator ==(const Client& p_client) const {
-	return (m_noFolio == p_client.m_noFolio && m_nom == p_client.m_nom && m_prenom == p_client.m_prenom && m_dateNaissance == p_client.m_dateNaissance && m_telephone == p_client.m_telephone);
+	return (m_noFolio == p_client.m_noFolio && m_nom == p_client.m_nom && m_prenom == p_client.m_prenom && m_dateNaissance == p_client.m_dateNaissance && m_telephone == p_client.m_telephone && m_dateNaissance == p_client.m_dateNaissance);
 }
 
 /**
