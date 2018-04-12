@@ -45,6 +45,21 @@ int main() {
 	validation = false;
 
 	cout << endl;
+	while(!validation){
+			cout << "Entrez le nom: " << endl;
+		getline(cin, nom);
+		if(validerFormatNom(nom)){
+			validation = true;
+		}
+		else{
+			cout << "Le nom n'est pas valide";
+		}
+	}
+
+	validation = false;
+
+
+	cout << endl;
 	getline(cin, prenom);
 	while(!validation){
 		cout << "Entrez le prénom: " << endl;
@@ -59,34 +74,6 @@ int main() {
 
 	validation = false;
 
-	cout << endl;
-	while(!validation){
-		cout << "Entrez le nom: " << endl;
-		getline(cin, nom);
-		if(validerFormatNom(nom)){
-			validation = true;
-		}
-		else{
-			cout << "Le nom n'est pas valide";
-		}
-	}
-
-	validation = false;
-
-
-	cout << endl;
-	while(!validation){
-		cout << "Entrez le numero de telephone XXX CCC-CCCC: " << endl;
-		getline(cin, telephone);
-		if(validerTelephone(telephone)){
-			validation = true;
-		}
-		else{
-			cout << "Le numéro de téléphone n'est pas valide";
-		}
-	}
-
-	validation = false;
 
 
 	cout << endl;
@@ -107,6 +94,18 @@ int main() {
 		}
 	}
 
+	cout << endl;
+	while(!validation){
+			cout << "Entrez le numero de telephone XXX CCC-CCCC: " << endl;
+		getline(cin, telephone);
+		if(validerTelephone(telephone)){
+			validation = true;
+		}
+		else{
+			cout << "Le numéro de téléphone n'est pas valide";
+		}
+	}
+
 	validation = false;
 
 
@@ -115,59 +114,8 @@ int main() {
 	cout << "Fichier client" << endl;
 	cout << "-----------------------------------" << endl;
 
-	Client nicola(noFolio, nom, prenom, telephone, date);
+	Client nicola(noFolio, prenom, nom, telephone, date);
 	cout << nicola.reqClientFormate() << endl;
-
-	cout << "-----------------------------------" << endl;
-
-
-	string typeDeCompte;
-	int noCompte;
-	double tauxInteret;
-	double solde;
-	int nombreTransaction;
-
-	cin.ignore();
-	cout << "Voulez-vous créer un compte cheque ou un compte epargne ?" << endl;
-	getline(cin, typeDeCompte);
-
-	if(typeDeCompte == "cheque"){
-		cout << "Création d'un compte Chèque" << endl;
-		cout << "-----------------------------------" << endl;
-		while(!validation){
-			cout << "Entrez le numéro de compte désiré:" << endl;
-			cin >> noCompte;
-			if(noCompte > 0){
-				validation = true;
-			}
-			else{
-				cout << "Le numéro de compte doit être plus grand que zéro" << endl;
-			}
-		}
-
-		validation = false;
-
-		cout << "Entrez le solde du compte" << endl;
-		cin >> solde;
-
-		cout << endl;
-
-		while(!validation){
-			cout << "Entrez le taux d'intéret du compte:" << endl;
-			cin >> tauxInteret;
-			if(tauxInteret >= 0 && tauxInteret < 100){
-				validation = true;
-			}
-			else{
-				cout << "Le taux d'interet doit être entre 0 et 100" << endl;
-			}
-		}
-
-	}
-	else if(typeDeCompte == "epargne"){
-		cout << "Création d'un compte Chèque" << endl;
-		cout << "-----------------------------------" << endl;
-	}
 
 	return 0;
 

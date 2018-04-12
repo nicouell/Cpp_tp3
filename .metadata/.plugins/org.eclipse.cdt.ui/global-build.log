@@ -1,130 +1,4 @@
-21:40:29 **** Build of configuration Debug for project TP3 ****
-make all 
-Building file: ../Main.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
-Finished building: ../Main.cpp
- 
-Building target: TP3
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
-Finished building target: TP3
- 
-21:40:45 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:40:45 **** Incremental Build of configuration Debug for project CompteChequeTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:40:45 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:40:45 **** Incremental Build of configuration Debug for project CompteTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:40:45 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-make: rien à faire pour « all ».
-21:40:45 **** Incremental Build of configuration Debug for project source ****
-make all 
-make: rien à faire pour « all ».
-21:40:48 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:41:24 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-Building file: ../ClientTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
- 
-Building target: ClientTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
- 
-21:41:25 **** Incremental Build of configuration Debug for project CompteChequeTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:41:25 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:41:25 **** Incremental Build of configuration Debug for project CompteTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:41:26 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-make: rien à faire pour « all ».
-21:41:26 **** Incremental Build of configuration Debug for project source ****
-make all 
-make: rien à faire pour « all ».
-21:41:27 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:43:37 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-Building file: ../ClientTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
- 
-Building target: ClientTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
- 
-21:44:16 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-Building file: ../ClientTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
- 
-Building target: ClientTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
- 
-21:44:41 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-Building file: ../ClientTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
- 
-Building target: ClientTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
- 
-21:46:28 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-Building file: ../ClientTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
- 
-Building target: ClientTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
- 
-21:57:16 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:57:16 **** Incremental Build of configuration Debug for project CompteChequeTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:57:16 **** Incremental Build of configuration Debug for project CompteEpargneTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:57:16 **** Incremental Build of configuration Debug for project CompteTesteur ****
-make all 
-make: rien à faire pour « all ».
-21:57:16 **** Incremental Build of configuration Debug for project TP3 ****
-make all 
-make: rien à faire pour « all ».
-21:57:16 **** Incremental Build of configuration Debug for project source ****
+09:39:52 **** Incremental Build of configuration Debug for project source ****
 make all 
 Building file: ../Client.cpp
 Invoking: GCC C++ Compiler
@@ -137,63 +11,55 @@ ar -r  "libsource.a"  ./Cheque.o ./Client.o ./Compte.o ./ContratException.o ./Da
 ar: création de libsource.a
 Finished building target: libsource.a
  
-22:00:00 **** Incremental Build of configuration Debug for project ClientTesteur ****
+09:40:32 **** Incremental Build of configuration Debug for project TP3 ****
 make all 
-Building file: ../ClientTesteur.cpp
+Building file: ../Main.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
  
-Building target: ClientTesteur
+Building target: TP3
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
  
-22:02:56 **** Incremental Build of configuration Debug for project ClientTesteur ****
+10:01:10 **** Incremental Build of configuration Debug for project TP3 ****
 make all 
-Building file: ../ClientTesteur.cpp
+Building file: ../Main.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
  
-Building target: ClientTesteur
+Building target: TP3
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
  
-22:03:45 **** Incremental Build of configuration Debug for project ClientTesteur ****
+10:05:04 **** Incremental Build of configuration Debug for project TP3 ****
 make all 
-Building file: ../ClientTesteur.cpp
+Building file: ../Main.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+Finished building: ../Main.cpp
  
-Building target: ClientTesteur
+Building target: TP3
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
  
-22:05:19 **** Incremental Build of configuration Debug for project ClientTesteur ****
+10:20:52 **** Incremental Build of configuration Debug for project TP3 ****
 make all 
-Building file: ../ClientTesteur.cpp
+Building file: ../Main.cpp
 Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
+g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Main.d" -MT"Main.o" -o "Main.o" "../Main.cpp"
+../Main.cpp: In function ‘int main()’:
+../Main.cpp:128:6: warning: unused variable ‘nombreTransaction’ [-Wunused-variable]
+  int nombreTransaction;
+      ^
+Finished building: ../Main.cpp
  
-Building target: ClientTesteur
+Building target: TP3
 Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
- 
-22:05:40 **** Incremental Build of configuration Debug for project ClientTesteur ****
-make all 
-Building file: ../ClientTesteur.cpp
-Invoking: GCC C++ Compiler
-g++ -std=c++03 -I"/home/etudiant/Bureau/TP3/source" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ClientTesteur.d" -MT"ClientTesteur.o" -o "ClientTesteur.o" "../ClientTesteur.cpp"
-Finished building: ../ClientTesteur.cpp
- 
-Building target: ClientTesteur
-Invoking: GCC C++ Linker
-g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "ClientTesteur"  ./ClientTesteur.o   -lgtest_main -lgtest -lpthread -lsource
-Finished building target: ClientTesteur
+g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "TP3"  ./Main.o   -lsource
+Finished building target: TP3
  

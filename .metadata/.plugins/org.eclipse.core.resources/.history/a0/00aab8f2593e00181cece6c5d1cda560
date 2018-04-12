@@ -123,11 +123,7 @@ int main() {
 
 	string typeDeCompte;
 	int noCompte;
-	double tauxInteret;
-	double solde;
-	int nombreTransaction;
 
-	cin.ignore();
 	cout << "Voulez-vous créer un compte cheque ou un compte epargne ?" << endl;
 	getline(cin, typeDeCompte);
 
@@ -141,32 +137,9 @@ int main() {
 				validation = true;
 			}
 			else{
-				cout << "Le numéro de compte doit être plus grand que zéro" << endl;
+				cout << "Le numéro de compte doit être plus grand que zéro";
 			}
 		}
-
-		validation = false;
-
-		cout << "Entrez le solde du compte" << endl;
-		cin >> solde;
-
-		cout << endl;
-
-		while(!validation){
-			cout << "Entrez le taux d'intéret du compte:" << endl;
-			cin >> tauxInteret;
-			if(tauxInteret >= 0 && tauxInteret < 100){
-				validation = true;
-			}
-			else{
-				cout << "Le taux d'interet doit être entre 0 et 100" << endl;
-			}
-		}
-
-	}
-	else if(typeDeCompte == "epargne"){
-		cout << "Création d'un compte Chèque" << endl;
-		cout << "-----------------------------------" << endl;
 	}
 
 	return 0;
