@@ -1,4 +1,4 @@
-16:33:33 **** Incremental Build of configuration Debug for project CompteChequeTesteur ****
+21:07:52 **** Incremental Build of configuration Debug for project CompteChequeTesteur ****
 make all 
 Building target: CompteChequeTesteur
 Invoking: GCC C++ Linker
@@ -6,5 +6,5 @@ g++ -L"/home/etudiant/Bureau/TP3/source/Debug" -o "CompteChequeTesteur"  ./Compt
 Finished building target: CompteChequeTesteur
  
 
-16:33:33 Build Finished (took 290ms)
+21:07:53 Build Finished (took 228ms)
 

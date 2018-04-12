@@ -32,3 +32,37 @@ public:
 	}
 	Client t_client;
 };
+
+TEST_F(UnClient, reqNoFolio){
+	ASSERT_EQ(1500, t_client.reqNoFolio());
+}
+
+TEST_F(UnClient, reqNom){
+	ASSERT_EQ("ouellet", t_client.reqNom());
+}
+
+TEST_F(UnClient, reqPrenom){
+	ASSERT_EQ("nicola", t_client.reqPrenom());
+}
+
+TEST_F(UnClient, reqTelephone){
+	ASSERT_EQ("581 246-4094", t_client.reqTelephone());
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
